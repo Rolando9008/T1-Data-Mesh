@@ -29,4 +29,9 @@
   /* Surface Colors */
   --surface-page: var(--gray-100);
   --surface-inverse: var(--gray-900);
+
+  /* Icons */
+  --icon-primary: var(--color-primary);
+  --icon-secondary: var(--color-secondary);
+  --icon-accent: var(--color-accent);
 }

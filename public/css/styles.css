@@ -1,0 +1,85 @@
+@import url(./tokens.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--text-color-default);
+  background-color: var(--surface-page);
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* BUTTON RESET */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon--primary {
+  fill: var(--icon-primary);
+}
+
+.icon--secondary {
+  fill: var(--icon-secondary);
+}
+
+.icon--accent {
+  fill: var(--icon-accent);
+}
+
+.icon--md {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon--lg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon--xl {
+  width: 3.2rem;
+  height: 3.2rem;
+}

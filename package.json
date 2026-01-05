@@ -5,7 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "icons:optimize": "svgo -f src/assets/icons --config=svgo.config.js",
+    "icons:sprite": "svg-sprite --symbol --symbol-dest public/assets/icons --symbol-sprite sprite.svg src/assets/icons/*.svg",
+    "icons": "npm run icons:optimize && npm run icons:sprite",
+    "icon:list": "node src/config/list-icons.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +20,9 @@
     "eslint": "^9.39.2",
     "globals": "^17.0.0",
     "nodemon": "^3.1.11",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "svg-sprite": "^2.0.4",
+    "svgo": "^4.0.0"
   },
   "dependencies": {
     "express": "^5.2.1"
