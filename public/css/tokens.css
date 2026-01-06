@@ -41,4 +41,21 @@
   --badge-color-primary: var(--color-primary);
   --badge-color-secondary: var(--color-secondary);
   --badge-color-accent: var(--color-accent);
+
+  /* buttons */
+  --btn-color-primary: var(--color-primary);
+  --btn-color-secondary: var(--color-secondary);
+  --btn-color-accent: var(--color-accent);
+  --btn-color-danger: var(--color-danger);
+
+  /* Button hover colors (derived using color-mix) */
+  --btn-primary-hover: color-mix(in srgb, var(--color-primary) 50%, white 50%);
+  --btn-secondary-hover: color-mix(in srgb, var(--color-secondary) 50%, white 50%);
+  --btn-accent-hover: color-mix(in srgb, var(--color-accent) 50%, white 50%);
+  --btn-danger-hover: color-mix(in srgb, var(--color-danger) 80%, black 20%);
+  --btn-ghost-hover: var(--gray-300);
+
+  /* Border + radius tokens */
+  --border-strong: var(--gray-900);
+  --radius-pill: 9999px;
 }

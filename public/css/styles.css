@@ -1,5 +1,6 @@
 @import url(./tokens.css);
 @import url(./components/badge.css);
+@import url(./components/button.css);
 
 *,
 *::before,
