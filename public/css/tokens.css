@@ -25,6 +25,8 @@
   --text-color-heading: var(--gray-900);
   --text-color-default: var(--gray-800);
   --text-color-muted: var(--gray-600);
+  --text-color-light: var(--gray-100); /* white text */
+  --text-color-selection: var(--color-primary); /* highlight background */
 
   /* Surface Colors */
   --surface-page: var(--gray-100);
