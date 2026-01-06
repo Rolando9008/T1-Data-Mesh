@@ -36,4 +36,9 @@
   --icon-primary: var(--color-primary);
   --icon-secondary: var(--color-secondary);
   --icon-accent: var(--color-accent);
+
+  /* badge */
+  --badge-color-primary: var(--color-primary);
+  --badge-color-secondary: var(--color-secondary);
+  --badge-color-accent: var(--color-accent);
 }
