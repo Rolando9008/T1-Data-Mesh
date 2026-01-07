@@ -38,26 +38,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body style="padding: 4rem" class="container">
-    <!-- Base vertical list -->
-    <ul class="list">
-      <li class="list__item">Item One</li>
-      <li class="list__item">Item Two</li>
-      <li class="list__item">Item Three</li>
-    </ul>
-
-    <!-- Inline horizontal list -->
-    <ul class="list list--inline">
-      <li class="list__item">Item One</li>
-      <li class="list__item">Item Two</li>
-      <li class="list__item">Item Three</li>
-    </ul>
-
-    <!-- Star bullet list -->
-    <ul class="list list--star">
-      <li class="list__item">Item One</li>
-      <li class="list__item">Item Two</li>
-      <li class="list__item">Item Three</li>
-    </ul>
+    <!-- Input group with icon and button -->
+    <div class="input-group">
+      <span class="input-group__icon" aria-hidden="true">
+        <svg class="icon icon--xl" aria-hidden="true">
+          <use href="/assets/icons/sprite.svg#tag-search"></use>
+        </svg>
+      </span>
+      <input class="input input-group__control" type="search" name="q" id="site-search" placeholder="Search the site" />
+      <button type="submit" class="btn btn--primary input-group__button">Search</button>
+    </div>
 
     <script src="./js/main.js"></script>
   </body>

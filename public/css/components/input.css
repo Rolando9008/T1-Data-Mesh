@@ -1,0 +1,88 @@
+/* Base input component */
+.input {
+  width: 100%;
+  padding: 0.6em 0.75em; /* Comfortable click/tap area */
+  border-radius: var(--radius-sm); /* Small rounding from tokens */
+  border: 1px solid var(--border-subtle); /* Default border */
+  font: inherit; /* Match surrounding typography */
+  color: inherit; /* Inherit text color */
+  background-color: var(--surface-muted); /* Light gray background */
+}
+
+/* Hover state (enabled only) */
+.input:hover:not(:disabled) {
+  border-color: var(--border-strong); /* More contrast on hover */
+}
+
+/* Focus-visible (keyboard/mouse users) */
+.input:focus-visible {
+  outline: 2px solid var(--focus-ring);
+}
+
+/* Disabled state */
+.input:disabled {
+  background-color: var(--surface-muted);
+  cursor: not-allowed;
+  opacity: 0.7; /* Dimmed to indicate inactivity */
+}
+
+/* Field wrapper: groups label, input, and hint/error */
+.field {
+  margin-bottom: 1rem; /* Space between fields in forms */
+}
+
+/* Label above the input */
+.field__label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem; /* Gap between label and input */
+}
+
+/* Hint / helper text */
+.field__hint {
+  font-size: 0.875rem;
+  color: var(--text-color-muted); /* Light gray helper text */
+  margin-top: 0.25rem;
+}
+
+/* Error text */
+.field__error {
+  font-size: 0.875rem;
+  color: var(--text-color-danger); /* Red from design tokens */
+}
+
+/* Error state: wrapper gets .field--error */
+.field.field--error .input {
+  border-color: var(--border-danger);
+}
+
+/* Input group: wraps icon + input + button */
+.input-group {
+  display: flex;
+  align-items: stretch;
+  gap: 0; /* Ensures borders touch without spacing */
+}
+
+/* Left icon container */
+.input-group__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75em;
+  border: 1px solid var(--border-subtle);
+  border-right: none; /* Avoid double border */
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  background-color: var(--surface-muted);
+}
+
+/* Middle input inside the group */
+.input-group__control {
+  border-radius: 0; /* Square corners so the group looks unified */
+}
+
+/* Right-side button */
+.input-group__button {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border: 1px solid var(--border-subtle);
+  border-left: none; /* Avoid double border */
+}

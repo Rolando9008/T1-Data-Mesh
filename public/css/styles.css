@@ -2,6 +2,7 @@
 @import url(./components/badge.css);
 @import url(./components/button.css);
 @import url(./components/list.css);
+@import url(./components/input.css);
 
 *,
 *::before,
