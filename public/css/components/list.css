@@ -1,0 +1,44 @@
+.list {
+  list-style: none; /* Remove browser bullets */
+  padding-left: 0; /* Remove default indentation */
+  margin: 0; /* Allow parent to control spacing */
+  display: flex; /* Enables gap-based spacing */
+  flex-direction: column; /* Vertical arrangement */
+  gap: 0.5rem; /* Space between items */
+  letter-spacing: 1px; /* Slight visual enhancement */
+}
+
+/* Inline / horizontal list variant */
+.list--inline {
+  flex-direction: row; /* Horizontal alignment */
+  gap: 2.5rem; /* Larger spacing between items */
+}
+
+/* Star bullet list variant */
+.list--star {
+  gap: 1.3rem; /* Slightly increased vertical spacing */
+}
+
+.list--star li {
+  display: flex; /* Bullet + text as aligned elements */
+  align-items: flex-start; /* Align star with multi-line text */
+  gap: 0.6rem; /* Space between bullet and label */
+  position: static; /* No absolute positioning required */
+}
+
+.list--star li::before {
+  content: ""; /* Creates the bullet element */
+  flex: 0 0 1em; /* Fixed icon size relative to text */
+  height: 1.1em;
+  width: 1.1em;
+  margin-top: 0.25em; /* Aligns with baseline for readability */
+  /* STRUCTURE — standalone SVG used as a mask */
+  mask-image: url("/assets/icons/star.svg");
+  -webkit-mask-image: url("/assets/icons/star.svg");
+  mask-size: 100% 100%; /* Ensures full coverage */
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  /* COLOR — mask tinted via design tokens */
+  background-color: var(--icon-primary);
+}
