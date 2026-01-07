@@ -63,4 +63,8 @@
   --border-danger: var(--color-danger);
   --radius-sm: 25px;
   --radius-pill: 9999px;
+
+  /* Links */
+  --link-primary: var(--color-primary);
+  --link-primary-hover: color-mix(in srgb, var(--color-primary) 50%, white 50%);
 }

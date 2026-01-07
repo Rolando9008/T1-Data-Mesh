@@ -1,0 +1,28 @@
+/* Base link element */
+.link {
+  font-family: inherit; /* Inherit text style */
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block; /* Ensures padding or decoration lines animate cleanly */
+  transition: color 0.2s ease; /* Smooth color change on hover */
+}
+
+/* Primary link variant */
+.link--primary {
+  color: var(--link-primary); /* Brand color from tokens */
+  text-decoration: underline;
+  text-underline-offset: 0.1em; /* Modern readable underline spacing */
+  text-decoration-thickness: 0.08em; /* Subtle underline thickness */
+}
+
+/* Hover state */
+.link--primary:hover:not(:disabled) {
+  color: var(--link-primary-hover); /* Lightened primary color */
+}
+
+/* Focus-visible state (keyboard users) */
+.link:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
