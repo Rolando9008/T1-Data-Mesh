@@ -63,6 +63,7 @@
   --border-danger: var(--color-danger);
   --radius-sm: 25px;
   --radius-pill: 9999px;
+  --radius-circle: 100%;
 
   /* Links */
   --link-primary: var(--color-primary);

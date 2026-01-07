@@ -1,0 +1,41 @@
+/* MEDIA OBJECT COMPONENT */
+
+/* Base layout */
+.media {
+  display: flex;
+  flex-direction: column; /* Stack on small screens */
+  align-items: flex-start;
+  gap: 2rem; /* Space between image and text */
+}
+
+/* Media image */
+.media__img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: var(--radius-circle); /* Makes the image perfectly circular */
+  object-fit: cover; /* Crops non-square images nicely */
+  flex-shrink: 0; /* Prevents shrinking on narrow screens */
+  display: block; /* Removes inline spacing issues */
+}
+
+/* Text block */
+.media__body {
+  flex: 1; /* Let text take remaining width */
+}
+
+/* Title inside the media body */
+.media__title {
+  margin: 0 0 1rem; /* Removes default top margin */
+}
+
+/* Paragraph text inside body */
+.media__text {
+  margin: 0 0 1rem;
+}
+
+/* Switch to horizontal layout at 480px and above */
+@media (min-width: 480px) {
+  .media {
+    flex-direction: row;
+  }
+}

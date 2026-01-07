@@ -38,7 +38,27 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body style="padding: 4rem" class="container">
-    <a class="link link--primary" href="http://localhost:3000/health">Learn More</a>
-    <script src="./js/main.js"></script>
+    <section class="accordion" aria-label="Frequently Asked Questions">
+      <!-- Accordion Item -->
+      <div class="accordion__item">
+        <h3 class="accordion__header">
+          <button class="accordion__button" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+            <span class="accordion__label">What is the OTC Data Mesh?</span>
+            <!-- Chevron icon from icon-gallery.html -->
+            <span class="accordion__icon" aria-hidden="true">
+              <svg class="icon" aria-hidden="true">
+                <use href="/assets/icons/sprite.svg#chevron"></use>
+              </svg>
+            </span>
+          </button>
+        </h3>
+        <!-- Accordion Content Panel -->
+        <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1" hidden>
+          <p>The OTC Data Mesh is a conceptual platform for securely sharing test and evaluation data across units, systems, and stakeholders.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/main.js" type="module" defer></script>
   </body>
 </html>

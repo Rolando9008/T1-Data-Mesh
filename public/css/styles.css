@@ -4,6 +4,8 @@
 @import url(./components/list.css);
 @import url(./components/input.css);
 @import url(./components/link.css);
+@import url(./components/media-object.css);
+@import url(./components/accordion.css);
 
 *,
 *::before,
